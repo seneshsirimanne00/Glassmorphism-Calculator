@@ -1,0 +1,69 @@
+.box{
+background: rgba(255, 255, 255, 0.19);
+border-radius: 25px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(6px);
+-webkit-backdrop-filter: blur(6px);
+border: 1px solid rgba(255, 255, 255, 0.31);
+width: 413px;
+height: 528px;
+margin: auto;
+margin-top: 65px;
+z-index: 3;
+}
+
+.ellipse{
+position: absolute;
+height: 150px;
+width: 155px;
+border-radius: 146px;
+top: 92px;
+left: 921px;
+background: linear-gradient(168.92deg, rgba(244, 243, 243, 0.8) 3.55%, rgba(184, 167, 255, 0.8) 61.15%, rgba(156, 131, 253, 0.8) 93.04%);
+transform: rotate(-10.25deg);
+}
+
+.ellipse2{
+    position: absolute;
+    height: 192px;
+    width: 192px;
+    border-radius: 146px;
+    top: 518px;
+    left: 426px;
+    background: linear-gradient(168.92deg, rgba(244, 243, 243, 0.8) 3.55%, rgba(184, 167, 255, 0.8) 61.15%, rgba(156, 131, 253, 0.8) 93.04%);
+    transform: rotate(-10.25deg);
+}
+
+.ellipse3{
+    position: absolute;
+    height: 112px;
+    width: 112px;
+    border-radius: 146px;
+    top: 205px;
+    left: 483px;
+    background: linear-gradient(168.92deg, rgba(244, 243, 243, 0.8) 3.55%, rgba(227, 167, 255, 0.8) 61.15%, rgba(214, 131, 253, 0.8) 93.04%);
+    transform: rotate(0.57deg);
+}
+
+.ellipse4{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 146px;
+    top: 483px;
+    left: 938px;
+    background: linear-gradient(168.92deg, #F4F3F3 3.55%, #F6C0ED 61.15%, #F7A3EA 93.04%);
+    transform: rotate(-5.89deg);
+}
+
+.ellipse4shadow{
+    position: absolute;
+    height: 79px;
+    width: 75px;
+    border-radius: 146px;
+    top: 499px;
+    left: 938px;
+    background: rgb(142 52 129 / 65%);
+    filter: blur(8px);
+    transform: rotate(-9.82deg);
+}
