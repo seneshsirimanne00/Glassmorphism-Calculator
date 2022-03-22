@@ -1,27 +1,37 @@
-.box{
-background: rgba(255, 255, 255, 0.19);
-border-radius: 25px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(6px);
--webkit-backdrop-filter: blur(6px);
-border: 1px solid rgba(255, 255, 255, 0.31);
-width: 413px;
-height: 528px;
-margin: auto;
-margin-top: 65px;
-z-index: 3;
+
+h2{
+    color: #7e209d;
+
+}
+
+.path{
+    color: #431153;
+    text-decoration: none;
+}
+
+.path:hover{
+    color: #b834e4;
 }
 
 .ellipse{
-position: absolute;
 height: 150px;
 width: 155px;
 border-radius: 146px;
 top: 92px;
-left: 921px;
+left: 1002px;
 background: linear-gradient(168.92deg, rgba(244, 243, 243, 0.8) 3.55%, rgba(184, 167, 255, 0.8) 61.15%, rgba(156, 131, 253, 0.8) 93.04%);
 transform: rotate(-10.25deg);
+position: absolute;
+animation-name: example;
+animation-duration: 5s;
+animation-iteration-count: infinite;
 }
+
+@keyframes example {
+    0%   { left:1002px;}
+    50%  { left:1040px;}
+    100% { left:1002px;}
+  }
 
 .ellipse2{
     position: absolute;
@@ -29,10 +39,19 @@ transform: rotate(-10.25deg);
     width: 192px;
     border-radius: 146px;
     top: 518px;
-    left: 426px;
+    left: 476px;
     background: linear-gradient(168.92deg, rgba(244, 243, 243, 0.8) 3.55%, rgba(184, 167, 255, 0.8) 61.15%, rgba(156, 131, 253, 0.8) 93.04%);
     transform: rotate(-10.25deg);
+    animation-name: exampleTwo;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
+
+@keyframes exampleTwo {
+    0%   { left:476px;}
+    50%  { left:500px;}
+    100% { left:476px;}
+  }
 
 .ellipse3{
     position: absolute;
@@ -40,30 +59,190 @@ transform: rotate(-10.25deg);
     width: 112px;
     border-radius: 146px;
     top: 205px;
-    left: 483px;
+    left: 553px;
     background: linear-gradient(168.92deg, rgba(244, 243, 243, 0.8) 3.55%, rgba(227, 167, 255, 0.8) 61.15%, rgba(214, 131, 253, 0.8) 93.04%);
     transform: rotate(0.57deg);
+    animation-name: exampleThree;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
+
+@keyframes exampleThree {
+    0%   { left:553px}
+    50%  { left:590px}
+    100% { left:553px}
+  }
 
 .ellipse4{
     position: absolute;
     height: 100px;
     width: 100px;
     border-radius: 146px;
-    top: 483px;
-    left: 938px;
     background: linear-gradient(168.92deg, #F4F3F3 3.55%, #F6C0ED 61.15%, #F7A3EA 93.04%);
     transform: rotate(-5.89deg);
+    animation-name: exampleFour;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    position: relative;
+    top: -95px;
+    left: 0px;
 }
 
 .ellipse4shadow{
-    position: absolute;
+    position: relative;
     height: 79px;
     width: 75px;
     border-radius: 146px;
-    top: 499px;
-    left: 938px;
     background: rgb(142 52 129 / 65%);
     filter: blur(8px);
     transform: rotate(-9.82deg);
+
+}
+
+  .ellipse4Whole{
+    position: absolute;
+    width: 400px;
+    height: 500px;
+    top: 499px;
+    left: 1052px;
+    animation-name: exampleFive;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+  @keyframes exampleFive {
+    0%   { top:499px;}
+    50%  { top:536px;}
+    100% { top:499px;}
+  }
+
+
+.box{
+    background: rgba(255, 255, 255, 0.19);
+    border-radius: 25px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.5px);
+    -webkit-backdrop-filter: blur(3.5px);
+    border: 1px solid rgba(255, 255, 255, 0.31);
+    width: 443px;
+    height: 552px;
+    margin: auto;
+    margin-top: 65px;
+    z-index: 3;
+    }
+
+.answerBox{
+    background: rgb(57 189 245 / 34%);
+    border-radius: 12px;
+    backdrop-filter: blur(8.3px);
+    -webkit-backdrop-filter: blur(1.5px);
+    border: 1px solid rgb(255 255 255 / 30%);
+    width: 387px;
+    height: 104px;
+    margin: auto;
+    margin-top: 41px;
+    z-index: 3;
+}
+
+.answerBox h1{
+    margin: 0;
+    background: linear-gradient(180deg, #2790D2 0%, #1A48A0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.answerBox h3{
+    margin: 0;
+    color: #2790D2;
+}
+.topAnswer{
+    height: 50%;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 5px;
+}
+
+.bottomAnswer{
+    height: 50%;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.keyBox{
+    width: 399px;
+    height: 67px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.key{
+    background: radial-gradient(104.05% 255.85% at 0% 13.81%, rgba(58, 196, 255, 0.24) 0%, rgba(58, 196, 255, 0.24) 100%);
+    border-radius: 12px;
+    backdrop-filter: blur(8.3px);
+    -webkit-backdrop-filter: blur(1.5px);
+    border: 1px solid rgb(255 255 255 / 30%);
+    width: 65px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 6px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.key:hover{
+    background: radial-gradient(104.05% 255.85% at 0% 13.81%, rgba(58, 196, 255, 0.438) 0%, rgba(58, 196, 255, 0.24) 100%);
+}
+
+
+.key p {
+    background: linear-gradient(180deg, #12344A 0%, #1A48A0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    opacity: 0.7;
+    font-weight: 600;
+    font-size: 23px;
+}
+
+.topBox{
+    height: 47px;
+}
+
+.topKeys{
+    height: 45px;
+}
+
+.topKeyFont{
+    font-size: 18px !important;
+    font-weight: 700 !important;
+}
+
+.enterKey{
+    width: 141px;
+    background: radial-gradient(104.05% 255.85% at 0% 13.81%, rgba(86, 58, 255, 0.408) 0%, rgba(86, 58, 255, 0.408) 100%);
+}
+
+.enterKey p{
+    background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.symbolKey{
+    background: radial-gradient(104.05% 255.85% at 0% 13.81%, rgba(58, 101, 255, 0.24) 0%, rgba(58, 101, 255, 0.234) 100%);
+}
+
+.symbolKey p{
+    background: linear-gradient(180deg, #2790D2 0%, #1A48A0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
