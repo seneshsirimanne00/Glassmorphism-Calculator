@@ -6,10 +6,10 @@ function Home() {
     <>
       <main>
         <h2>Welcome to the homepage!</h2>
-        <p>You can do this, I believe in you.</p>
+        <p>This is a react experiment project of mine.</p>
       </main>
       <nav>
-        <Link to="/about">About</Link>
+        <Link to="/GlassCalc">Go to Glass Calc</Link>
       </nav>
     </>
   );
