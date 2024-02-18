@@ -1,4 +1,8 @@
 
+.container{
+    height: inherit;
+}
+
 h2{
     color: #7e209d;
 
@@ -14,23 +18,23 @@ h2{
 }
 
 .ellipse{
-height: 150px;
-width: 155px;
-border-radius: 146px;
-top: 92px;
-left: 1002px;
-background: linear-gradient(168.92deg, rgba(244, 243, 243, 0.8) 3.55%, rgba(184, 167, 255, 0.8) 61.15%, rgba(156, 131, 253, 0.8) 93.04%);
-transform: rotate(-10.25deg);
-position: absolute;
-animation-name: example;
-animation-duration: 5s;
-animation-iteration-count: infinite;
+    height: 150px;
+    width: 155px;
+    border-radius: 146px;
+    top: 7%;
+    background: linear-gradient(168.92deg, rgba(244, 243, 243, 0.8) 3.55%, rgba(184, 167, 255, 0.8) 61.15%, rgba(156, 131, 253, 0.8) 93.04%);
+    transform: rotate(-10.25deg);
+    position: absolute;
+    animation-name: example;
+    animation-duration: 6s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
 }
 
 @keyframes example {
-    0%   { left:1002px;}
-    50%  { left:1040px;}
-    100% { left:1002px;}
+    0%   { left: 58%; }
+    50%  { left: 62%; }
+    100% { left: 58%; }
   }
 
 .ellipse2{
@@ -38,19 +42,19 @@ animation-iteration-count: infinite;
     height: 192px;
     width: 192px;
     border-radius: 146px;
-    top: 518px;
-    left: 476px;
+    bottom: -10%;
     background: linear-gradient(168.92deg, rgba(244, 243, 243, 0.8) 3.55%, rgba(184, 167, 255, 0.8) 61.15%, rgba(156, 131, 253, 0.8) 93.04%);
     transform: rotate(-10.25deg);
     animation-name: exampleTwo;
-    animation-duration: 5s;
+    animation-duration: 8s;
+    animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
 }
 
 @keyframes exampleTwo {
-    0%   { left:476px;}
-    50%  { left:500px;}
-    100% { left:476px;}
+    0%   { left:-35%;}
+    50%  { left:-15%;}
+    100% { left:-35%;}
   }
 
 .ellipse3{
@@ -58,34 +62,28 @@ animation-iteration-count: infinite;
     height: 112px;
     width: 112px;
     border-radius: 146px;
-    top: 205px;
-    left: 553px;
+    top: 18%;
     background: linear-gradient(168.92deg, rgba(244, 243, 243, 0.8) 3.55%, rgba(227, 167, 255, 0.8) 61.15%, rgba(214, 131, 253, 0.8) 93.04%);
     transform: rotate(0.57deg);
     animation-name: exampleThree;
-    animation-duration: 4s;
+    animation-duration: 6s;
     animation-iteration-count: infinite;
 }
 
 @keyframes exampleThree {
-    0%   { left:553px}
-    50%  { left:590px}
-    100% { left:553px}
+    0%   { left:-20%}
+    50%  { left:-10%}
+    100% { left:-20%}
   }
 
 .ellipse4{
-    position: absolute;
     height: 100px;
     width: 100px;
     border-radius: 146px;
     background: linear-gradient(168.92deg, #F4F3F3 3.55%, #F6C0ED 61.15%, #F7A3EA 93.04%);
     transform: rotate(-5.89deg);
-    animation-name: exampleFour;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
     position: relative;
     top: -95px;
-    left: 0px;
 }
 
 .ellipse4shadow{
@@ -101,20 +99,25 @@ animation-iteration-count: infinite;
 
   .ellipse4Whole{
     position: absolute;
-    width: 400px;
-    height: 500px;
-    top: 499px;
-    left: 1052px;
+    width: 100px;
+    height: 80px;
+    right: -19%;
     animation-name: exampleFive;
     animation-duration: 5s;
     animation-iteration-count: infinite;
 }
 
   @keyframes exampleFive {
-    0%   { top:499px;}
-    50%  { top:536px;}
-    100% { top:499px;}
+    0%   { top:70%;}
+    70%  { top:74%;}
+    100% { top:70%;}
   }
+
+.box-invisible{
+    width: 450px;
+    margin: auto;
+    position: relative;
+}
 
 
 .box{
@@ -127,8 +130,6 @@ animation-iteration-count: infinite;
     width: 443px;
     height: 552px;
     margin: auto;
-    margin-top: 65px;
-    z-index: 3;
     }
 
 .answerBox{
