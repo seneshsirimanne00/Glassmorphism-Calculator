@@ -79,7 +79,7 @@ function Calculator() {
 
   return (
     <div className='container'>
-      <h2 style={{margin: "0", padding: "25px 0"}}>Welcome to Glass calc!</h2>
+      <h2 className='fredoka-font' style={{margin: "0", padding: "25px 0"}}>Welcome to Glass calc!</h2>
       <div className='ellipse'></div>
       <div className='box-invisible'>
         <div className='ellipse2'></div>
